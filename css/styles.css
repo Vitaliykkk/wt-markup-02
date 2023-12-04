@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+
+:root {
+  --light-blue: #2196f3;
+  --dark-gray: #212121;
+  --buton-shadow: rgba(0, 0, 0, 0.15);
+  --light-gray: #757575;
+  --dark-gray-back: #2f303a;
+  --gray-text: rgba(255, 255, 255, 0.6);
+  --gray-ico: rgba(255, 255, 255, 0.1);
+  --white-back: #f5f4fa;
+  --ico-gray: #afb1b8;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--dark-gray);
+}
+header > h1 {
+  font-family: Raleway;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+#dev {
+  color: var(--light-blue);
+}
+a {
+  text-decoration: none;
+  color: var(--dark-gray);
+}
+a:hover,
+.tel-email a:hover {
+  color: var(--light-blue);
+  fill: var(--light-blue);
+}
+ul {
+  list-style-type: none;
+}
+nav li {
+  color: var(--dark-gray);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+.tel-email a {
+  color: var(--light-gray);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  fill: var(--light-gray);
+}
+#background {
+  background-color: var(--dark-gray-back);
+}
+#background > h1 {
+  color: white;
+  text-align: center;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 136.364%;
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+}
+#background button {
+  width: 200px;
+  height: 50px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 4px;
+  background: var(--light-blue);
+  box-shadow: 0px 4px 4px 0px var(--buton-shadow);
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 187.5%;
+  letter-spacing: 0.96px;
+}
+#main-info > h2 {
+  color: var(--dark-gray);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+#main-info p {
+  flex-shrink: 0;
+  color: var(--light-gray);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 171.429%;
+  letter-spacing: 0.42px;
+}
+
+#portfolio h2,
+#team h2 {
+  color: var(--dark-gray);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+}
+#portfolio img {
+  border-radius: 10px;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat, #c4c4c4;
+  box-shadow: 0px 0px 10px 0px rgba(111, 111, 111, 0.25);
+}
+#team {
+  background-color: var(--white-back);
+}
+#team li {
+  background-color: white;
+}
+#team p:first-of-type {
+  color: var(--dark-gray);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+#team p:last-of-type {
+  color: var(--light-gray);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+#team svg > path:first-child {
+  fill: white;
+}
+#team svg path {
+  fill: var(--ico-gray);
+}
+#team a:hover svg > path:first-child {
+  fill: var(--light-blue);
+}
+#team a:hover svg path {
+  fill: white;
+}
+footer {
+  background: var(--dark-gray-back);
+}
+footer > h2:first-child {
+  color: white;
+  font-family: Raleway;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+#address p:first-of-type {
+  color: white;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 171.428%;
+  letter-spacing: 0.42px;
+}
+#address p:not(:first-of-type) {
+  color: var(--gray-text);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 171.428%;
+  letter-spacing: 0.42px;
+}
+#join h2,
+#form h2 {
+  color: white;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+#join a svg > path:first-of-type {
+  fill: var(--gray-ico);
+}
+#join a svg path {
+  fill: white;
+}
+#join a:hover svg > path {
+  fill: var(--light-blue);
+}
+#form label {
+  color: var(--gray-text);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.48px;
+}
+#form input[type="email"] {
+  width: 358px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  background: rgba(33, 150, 243, 0);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+#form input[type="submit"] {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 187.5%;
+  letter-spacing: 0.96px;
+  width: 200px;
+  height: 50px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 4px;
+  background: var(--light-blue);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
